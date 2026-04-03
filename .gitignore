@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+docs/
+
+# Storybook
+storybook-static/
+
+# Coverage
+coverage/
+
+# IDE
+*.swp
+*.swo
+*~
