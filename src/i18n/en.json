@@ -1,0 +1,150 @@
+{
+  "app": {
+    "title": "APDU Viewer",
+    "subtitle": "Smart card APDU trace analyzer"
+  },
+  "input": {
+    "title": "Input",
+    "traceTab": "Trace Input",
+    "manualTab": "Manual APDU",
+    "placeholder": "Paste APDU log here or drag and drop a file...",
+    "manualCommand": "Command APDU (hex)",
+    "manualResponse": "Response APDU (hex)",
+    "manualCommandPlaceholder": "e.g. 00 A4 04 00 07 A0 00 00 03 08 00 00",
+    "manualResponsePlaceholder": "e.g. 90 00",
+    "parse": "Analyze",
+    "clear": "Clear",
+    "cancel": "Cancel",
+    "loadFile": "Load File",
+    "openTrace": "Open Trace",
+    "dropzone": "Drop files here or click to select",
+    "dropzoneActive": "Drop the file here...",
+    "sampleTab": "Sample",
+    "loadSample": "Load Sample Trace",
+    "sampleDescription": "A curated sample APDU trace from a SafeNet smart card session with various commands and status codes."
+  },
+  "summary": {
+    "title": "Trace Summary",
+    "transactions": "Transactions",
+    "commands": "Commands",
+    "responses": "Responses",
+    "successful": "Successful",
+    "errors": "Errors",
+    "warnings": "Warnings",
+    "format": "Format"
+  },
+  "transaction": {
+    "title": "Transactions",
+    "details": "Transaction Details",
+    "index": "#",
+    "time": "Time",
+    "command": "Command",
+    "response": "Response",
+    "status": "Status",
+    "summary": "Summary",
+    "noSelection": "Select a transaction to view details",
+    "rawRequest": "Raw Request",
+    "rawResponse": "Raw Response",
+    "apduFields": "APDU Fields",
+    "tlvTree": "TLV Tree",
+    "cla": "CLA",
+    "ins": "INS",
+    "p1": "P1",
+    "p2": "P2",
+    "lc": "Lc",
+    "le": "Le",
+    "data": "Data",
+    "sw": "Status Word",
+    "orphanCommand": "No response",
+    "orphanResponse": "No command",
+    "unknown": "Unknown",
+    "noData": "Load a trace file or enter APDU commands to begin",
+    "rawData": "Raw Data"
+  },
+  "tlv": {
+    "tag": "Tag",
+    "length": "Length",
+    "value": "Value",
+    "name": "Name",
+    "category": "Category",
+    "standard": "Standard",
+    "proprietary": "Proprietary",
+    "application": "Application",
+    "unknown": "Unknown",
+    "ascii": "ASCII"
+  },
+  "filter": {
+    "search": "Search...",
+    "allStatuses": "All statuses",
+    "success": "Success",
+    "error": "Error",
+    "warning": "Warning"
+  },
+  "apdu": {
+    "command": {
+      "select": "SELECT",
+      "getData": "GET DATA",
+      "readBinary": "READ BINARY",
+      "readRecord": "READ RECORD",
+      "verify": "VERIFY",
+      "changeReferenceData": "CHANGE REFERENCE DATA",
+      "performSecurityOp": "PERFORM SECURITY OPERATION",
+      "getChallenge": "GET CHALLENGE",
+      "externalAuth": "EXTERNAL AUTHENTICATE",
+      "internalAuth": "INTERNAL AUTHENTICATE",
+      "getResponse": "GET RESPONSE",
+      "createFile": "CREATE FILE",
+      "putData": "PUT DATA"
+    },
+    "status": {
+      "9000": {
+        "title": "Success",
+        "description": "Command executed successfully"
+      },
+      "6A80": {
+        "title": "Wrong data",
+        "description": "Incorrect parameters in data field"
+      },
+      "6A82": {
+        "title": "File not found",
+        "description": "Application/file not found"
+      },
+      "6A86": {
+        "title": "Incorrect P1-P2",
+        "description": "Incorrect parameters P1-P2"
+      },
+      "6881": {
+        "title": "Not supported",
+        "description": "Logical channel not supported"
+      },
+      "6D00": {
+        "title": "INS not supported",
+        "description": "Instruction not supported"
+      },
+      "61xx": {
+        "title": "More data",
+        "description": "More data available"
+      },
+      "6Cxx": {
+        "title": "Wrong Le",
+        "description": "Correct Le value provided"
+      }
+    },
+    "summary": {
+      "selectedAid": "SELECT application {{aid}}",
+      "readObject": "GET DATA ({{tag}})",
+      "unknownCommand": "Unknown command"
+    }
+  },
+  "settings": {
+    "language": "Language"
+  },
+  "action": {
+    "copy": "Copy to clipboard"
+  },
+  "language": {
+    "en": "English",
+    "ru": "Русский",
+    "uk": "Українська"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "app": {
+    "title": "APDU Viewer",
+    "subtitle": "Аналізатор APDU-трейсів смарт-карт"
+  },
+  "input": {
+    "title": "Введення даних",
+    "traceTab": "Трейс",
+    "manualTab": "Ручне введення APDU",
+    "placeholder": "Вставте лог APDU або перетягніть файл...",
+    "manualCommand": "Команда APDU (hex)",
+    "manualResponse": "Відповідь APDU (hex)",
+    "manualCommandPlaceholder": "наприклад 00 A4 04 00 07 A0 00 00 03 08 00 00",
+    "manualResponsePlaceholder": "наприклад 90 00",
+    "parse": "Аналізувати",
+    "clear": "Очистити",
+    "cancel": "Скасувати",
+    "loadFile": "Завантажити файл",
+    "openTrace": "Відкрити трейс",
+    "dropzone": "Перетягніть файли сюди або натисніть для вибору",
+    "dropzoneActive": "Відпустіть файл тут...",
+    "sampleTab": "Приклад",
+    "loadSample": "Завантажити приклад",
+    "sampleDescription": "Приклад APDU-трейсу сесії смарт-картки SafeNet з різними командами та статусними кодами."
+  },
+  "summary": {
+    "title": "Зведення трейсу",
+    "transactions": "Транзакції",
+    "commands": "Команди",
+    "responses": "Відповіді",
+    "successful": "Успішні",
+    "errors": "Помилки",
+    "warnings": "Попередження",
+    "format": "Формат"
+  },
+  "transaction": {
+    "title": "Транзакції",
+    "details": "Деталі транзакції",
+    "index": "№",
+    "time": "Час",
+    "command": "Команда",
+    "response": "Відповідь",
+    "status": "Статус",
+    "summary": "Опис",
+    "noSelection": "Оберіть транзакцію для перегляду деталей",
+    "rawRequest": "Запит (raw)",
+    "rawResponse": "Відповідь (raw)",
+    "apduFields": "Поля APDU",
+    "tlvTree": "Дерево TLV",
+    "cla": "CLA",
+    "ins": "INS",
+    "p1": "P1",
+    "p2": "P2",
+    "lc": "Lc",
+    "le": "Le",
+    "data": "Дані",
+    "sw": "Статусне слово",
+    "orphanCommand": "Немає відповіді",
+    "orphanResponse": "Немає команди",
+    "unknown": "Невідомо",
+    "noData": "Завантажте файл трейсу або введіть APDU-команди для початку",
+    "rawData": "Необроблені дані"
+  },
+  "tlv": {
+    "tag": "Тег",
+    "length": "Довжина",
+    "value": "Значення",
+    "name": "Назва",
+    "category": "Категорія",
+    "standard": "Стандартний",
+    "proprietary": "Пропрієтарний",
+    "application": "Прикладний",
+    "unknown": "Невідомий",
+    "ascii": "ASCII"
+  },
+  "filter": {
+    "search": "Пошук...",
+    "allStatuses": "Усі статуси",
+    "success": "Успіх",
+    "error": "Помилка",
+    "warning": "Попередження"
+  },
+  "apdu": {
+    "command": {
+      "select": "SELECT",
+      "getData": "GET DATA",
+      "readBinary": "READ BINARY",
+      "readRecord": "READ RECORD",
+      "verify": "VERIFY",
+      "changeReferenceData": "CHANGE REFERENCE DATA",
+      "performSecurityOp": "PERFORM SECURITY OPERATION",
+      "getChallenge": "GET CHALLENGE",
+      "externalAuth": "EXTERNAL AUTHENTICATE",
+      "internalAuth": "INTERNAL AUTHENTICATE",
+      "getResponse": "GET RESPONSE",
+      "createFile": "CREATE FILE",
+      "putData": "PUT DATA"
+    },
+    "status": {
+      "9000": {
+        "title": "Успіх",
+        "description": "Команду виконано успішно"
+      },
+      "6A80": {
+        "title": "Невірні дані",
+        "description": "Некоректні параметри в полі даних"
+      },
+      "6A82": {
+        "title": "Файл не знайдено",
+        "description": "Застосунок/файл не знайдено"
+      },
+      "6A86": {
+        "title": "Некоректні P1-P2",
+        "description": "Некоректні параметри P1-P2"
+      },
+      "6881": {
+        "title": "Не підтримується",
+        "description": "Логічний канал не підтримується"
+      },
+      "6D00": {
+        "title": "INS не підтримується",
+        "description": "Інструкція не підтримується"
+      },
+      "61xx": {
+        "title": "Є ще дані",
+        "description": "Доступні додаткові дані"
+      },
+      "6Cxx": {
+        "title": "Невірний Le",
+        "description": "Вказано коректне значення Le"
+      }
+    },
+    "summary": {
+      "selectedAid": "SELECT застосунок {{aid}}",
+      "readObject": "GET DATA ({{tag}})",
+      "unknownCommand": "Невідома команда"
+    }
+  },
+  "settings": {
+    "language": "Мова"
+  },
+  "action": {
+    "copy": "Копіювати до буфера"
+  },
+  "language": {
+    "en": "English",
+    "ru": "Русский",
+    "uk": "Українська"
+  }
+}
