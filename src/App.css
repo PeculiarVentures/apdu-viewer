@@ -14,7 +14,8 @@
 .app-layout {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
 }
 
 /* ── Header ── */
@@ -112,6 +113,7 @@
   flex-direction: column;
   overflow: hidden;
   min-height: 0;
+  min-width: 0;
 }
 
 /* ── Dialog (Modal) ── */
@@ -413,6 +415,7 @@
   border-radius: 4px;
   font-weight: 500;
   flex-shrink: 0;
+  margin-left: auto;
 }
 
 .severity-success {
