@@ -36,6 +36,42 @@ The project follows a layered architecture with strict separation of concerns:
 - `npm run typecheck` — TypeScript type checking
 - `npm run storybook` — Start Storybook
 
+## Commit Convention
+
+Follow [Conventional Commits](https://www.conventionalcommits.org/). All commit messages must use this format:
+
+```
+<type>(<scope>): <description>
+```
+
+### Types
+- `feat` — New feature
+- `fix` — Bug fix
+- `docs` — Documentation
+- `style` — Formatting (no logic change)
+- `refactor` — Code restructuring
+- `test` — Adding/updating tests
+- `chore` — Build, tooling, config
+- `ci` — CI/CD changes
+
+### Rules
+- Use English for commit messages
+- Use lowercase, imperative mood ("add", not "added")
+- Do not end with a period
+- Keep first line under 72 characters
+- Optional scope: `parsers`, `analyzers`, `registries`, `i18n`, `ui`
+
+### Examples
+```
+feat(parsers): add PCSC log format parser
+fix(analyzers): handle extended length TLV correctly
+test: add integration tests for status registry
+docs: update README with deployment instructions
+ci: add code coverage to CI pipeline
+```
+
+See [CONTRIBUTING.md](.github/CONTRIBUTING.md) for the full guide.
+
 ## Detailed Instructions
 
 See `.github/instructions/` for topic-specific guidelines:
