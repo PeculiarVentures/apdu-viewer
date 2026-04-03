@@ -1,3 +1,4 @@
+import path from "node:path";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
@@ -9,7 +10,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": "/Users/microshine/github/pv/apdu-viewer/src",
+      "@": path.resolve(__dirname, "src"),
     },
   },
 });
